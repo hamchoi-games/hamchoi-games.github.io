@@ -35,6 +35,72 @@
 }
 
 
+.jobs-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  border-top: 2px solid #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.jobs-section p {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+  text-align: center;
+}
+
+.job-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.job-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e0e0e0;
+}
+
+.job-card h3 {
+  font-size: 1.4rem;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.job-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.job-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.job-card li {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.job-card strong {
+  color: #222;
+}
 
 
 /* Global Reset & Font */
@@ -61,6 +127,15 @@ body {
   border-radius: 20px;
   max-width: 1000px;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 600px) {
+  .job-cards {
+    padding: 0 10px;
+  }
+
+  .jobs-section {
+    padding: 40px 15px;
+  }
 }
 
 .embedded-form-container iframe {
@@ -401,3 +476,4 @@ JOBS
   0%   { background-position: 0% 0%; }
   100% { background-position: 100% 0%; }
 }
+
